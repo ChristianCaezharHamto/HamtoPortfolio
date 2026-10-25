@@ -190,33 +190,33 @@
                 </div>
             </div>
 
-
         </div>
 
-        <a href="#projects" class="lightbox" id="img1"><img src="assets/sword grave.jfif" alt="Sword Grave Expanded"></a>
-        <a href="#projects" class="lightbox" id="img2"><img src="assets/Tailless.gif" alt="Project Tailless Expanded"></a>
-        <a href="#projects" class="lightbox" id="img3"><img src="assets/tekken merch.jpg" alt="Tekken Mobile App Expanded"></a>
+        <!-- LIGHTBOXES -->
+        <a href="#!" class="lightbox" id="img1"><img src="assets/sword grave.jfif" alt="Sword Grave Expanded"></a>
+        <a href="#!" class="lightbox" id="img2"><img src="assets/Tailless.gif" alt="Project Tailless Expanded"></a>
+        <a href="#!" class="lightbox" id="img3"><img src="assets/tekken merch.jpg" alt="Tekken Mobile App Expanded"></a>
         
         <div class="lightbox" id="video4">
-            <a href="#projects" class="lightbox-close">&times;</a>
+            <a href="#!" class="lightbox-close">&times;</a>
             <video controls autoplay loop>
                 <source src="assets/act 2 scene 31.mp4" type="video/mp4">
             </video>
         </div>
 
         <div class="lightbox" id="video5">
-            <a href="#projects" class="lightbox-close">&times;</a>
+            <a href="#!" class="lightbox-close">&times;</a>
             <video controls autoplay loop>
                 <source src="assets/act 2 scene 24.1.mp4" type="video/mp4">
             </video>
         </div>
 
-        <a href="#projects" class="lightbox" id="img6"><img src="assets/brgy shot.jfif" alt="Brgy Shot Expanded"></a>
-        <a href="#projects" class="lightbox" id="img7"><img src="assets/sinner's sacrifice midterm.png" alt="Sinner's Sacrifice Expaned"></a>
-        <a href="#projects" class="lightbox" id="img8"><img src="assets/Oguri Fat.png" alt="Oguri Cap Expanded"></a>
-        <a href="#projects" class="lightbox" id="img9"><img src="assets/akimbo capy.png" alt="CappyBARAK Expanded"></a>
-        <a href="#projects" class="lightbox" id="img10"><img src="assets/Katsuragi Ace.png" alt="Katsuragi Ace Expanded"></a>
-        <a href="#projects" class="lightbox" id="img11"><img src="assets/nakayama racecourse 1.png" alt="Nakayama Racecourse Expanded"></a>
+        <a href="#!" class="lightbox" id="img6"><img src="assets/brgy shot.jfif" alt="Brgy Shot Expanded"></a>
+        <a href="#!" class="lightbox" id="img7"><img src="assets/sinner's sacrifice midterm.png" alt="Sinner's Sacrifice Expaned"></a>
+        <a href="#!" class="lightbox" id="img8"><img src="assets/Oguri Fat.png" alt="Oguri Cap Expanded"></a>
+        <a href="#!" class="lightbox" id="img9"><img src="assets/akimbo capy.png" alt="CappyBARAK Expanded"></a>
+        <a href="#!" class="lightbox" id="img10"><img src="assets/Katsuragi Ace.png" alt="Katsuragi Ace Expanded"></a>
+        <a href="#!" class="lightbox" id="img11"><img src="assets/nakayama racecourse 1.png" alt="Nakayama Racecourse Expanded"></a>
     </section>
 
     <section id="experience">
@@ -278,10 +278,10 @@
     </footer>
 
     <script>
-        document.querySelectorAll('.nav-links a, .btn').forEach(anchor => {
+        document.querySelectorAll('.nav-links a, .hero .btn').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 const targetId = this.getAttribute('href');
-                if (targetId.startsWith('#')) {
+                if (targetId && targetId.startsWith('#') && targetId.length > 1) {
                     const targetElement = document.querySelector(targetId);
                     if (targetElement) {
                         e.preventDefault();
